@@ -1,0 +1,26 @@
+/* Nav.module.css — faithful port of site.css site-header */
+.header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 6px rgba(0,0,0,.3); }
+.inner  { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: .5rem 1.5rem; flex-wrap: wrap; gap: .5rem; }
+
+.logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-size: 1.25rem; font-weight: 700; color: var(--orange); letter-spacing: .02em; }
+.logo:hover { opacity: .9; text-decoration: none; }
+.paw  { font-size: 1.4rem; }
+
+.nav { display: flex; flex-wrap: wrap; gap: .2rem; align-items: center; }
+.nav a { color: #ccd; padding: .35rem .7rem; font-size: .88rem; font-weight: 500; border-radius: 4px; transition: background .15s, color .15s; text-decoration: none; }
+.nav a:hover, .nav a.active { color: #fff; background: rgba(255,255,255,.1); }
+
+.cta { background: var(--orange) !important; color: #fff !important; border-radius: 4px; }
+.cta:hover { opacity: .85; }
+
+.logoutBtn { background: none; border: 1px solid rgba(255,255,255,.25); color: #ccd; padding: .35rem .7rem; border-radius: 4px; cursor: pointer; font-size: .88rem; font-weight: 500; }
+.logoutBtn:hover { background: rgba(255,255,255,.1); color: #fff; }
+
+.hamburger { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  .nav { display: none; width: 100%; flex-direction: column; align-items: stretch; padding-bottom: .75rem; }
+  .nav.open { display: flex; }
+  .nav a { padding: .5rem .75rem; }
+}
