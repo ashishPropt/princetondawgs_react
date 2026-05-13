@@ -1,0 +1,13 @@
+.footer { background: var(--navy); color: #ccd; padding: 3rem 1.5rem 1rem; }
+.inner  { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+.brand .logo { font-size: 1.4rem; font-weight: 700; color: var(--orange); display: block; margin-bottom: .5rem; }
+.brand p     { font-size: .85rem; color: rgba(255,255,255,.5); }
+.links h4    { color: #fff; margin-bottom: .75rem; font-size: .9rem; }
+.links a     { display: block; color: rgba(255,255,255,.6); font-size: .85rem; margin-bottom: .4rem; text-decoration: none; }
+.links a:hover { color: var(--orange); }
+.usta        { font-size: .85rem; }
+.usta span   { font-size: 1rem; font-weight: 700; color: var(--orange); }
+.usta p      { color: rgba(255,255,255,.5); margin-top: .3rem; }
+.bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 1.5rem; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: .82rem; color: rgba(255,255,255,.35); }
+.bottom div a { color: rgba(255,255,255,.35); margin-left: 1rem; text-decoration: none; }
+.bottom div a:hover { color: var(--orange); }
